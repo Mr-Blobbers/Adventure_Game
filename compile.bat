@@ -7,7 +7,7 @@ if exist *.o del *.o
 
 :: Compile each source file
 gcc -std=c11 -Wall -Wextra -O2 ^
-  main.c engine.c scene.c data.c player.c class.c combat.c save.c common.c ^
+  *.c ^
   -o adventure.exe
 
 if exist adventure.exe (
@@ -15,5 +15,5 @@ if exist adventure.exe (
 ) else (
     echo Build failed!
 )
-adventure.exe
+
 pause

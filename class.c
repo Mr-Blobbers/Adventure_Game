@@ -1,5 +1,5 @@
 #include "headers\class.h"
-
+/*Switch case to choose your class*/
 const char* class_name(ClassType c) {
     switch(c) {
         case CLASS_FIGHTER: return "Fighter";

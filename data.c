@@ -1,9 +1,10 @@
 #include "headers\scene.h"
 #include <stddef.h>  // for NULL
-
+/* Different Enemy Encounters */
 Encounter goblin = {"Goblin", 6, 12, 3, 6};
 Encounter orc    = {"Orc",    12, 13, 4, 8};
 
+//The available scenes including the enemy encounter
 Scene scenes[] = {
     { "start", "You stand at the entrance of a dungeon.", 0, NULL, 2,
       { {"Enter", "hall"}, {"Leave", "exit"}, {"", ""}, {"", ""} } },
